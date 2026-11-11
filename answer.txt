@@ -1,0 +1,7 @@
+1) Home link (href="../index.html"):
+   - Destination: opened in the SAME tab.
+   - Starting page (contact.html): was replaced by index.html in the current tab.
+
+2) Learning resource link (target="_blank"):
+   - Destination: opened in a NEW tab.
+   - Starting page (contact.html): remained open and unchanged in the original tab.
