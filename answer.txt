@@ -1,7 +1,43 @@
-1) Home link (href="../index.html"):
-   - Destination: opened in the SAME tab.
-   - Starting page (contact.html): was replaced by index.html in the current tab.
+===========================================
+Assignment 3 - answers.txt
+===========================================
 
-2) Learning resource link (target="_blank"):
-   - Destination: opened in a NEW tab.
-   - Starting page (contact.html): remained open and unchanged in the original tab.
+--- Part 2: FAQ Keyboard Test ---
+- Pressed Tab: focus moved to first question summary.
+- Pressed Tab again: focus moved to second question summary.
+- Pressed Enter: second question opened (answer visible).
+- Pressed Enter again: second question closed.
+- Result: <details>/<summary> works with keyboard natively.
+
+--- Part 3: Video Code Fix ---
+Corrected line:
+<video src="../media/intro.mp4" controls preload="metadata"></video>
+
+Q1: The relative path starts from the pages/ folder (location of courses.html).
+    Since media/ is next to index.html (root), we need ../ to go up one level.
+
+Q2: muted="false" still mutes because muted is a boolean attribute —
+    presence = true. Fix: remove the muted attribute entirely.
+
+Q3: preload="metadata" fits the requirement (fetch only metadata).
+
+--- Part 4: Visitor Test Log ---
+Step 1: Opened "View course requirements" from homepage.
+        Result: [OK] Navigated to first course requirements.
+        (If broken: fixed link to pages/courses.html#course1)
+
+Step 2: Opened course guide.
+        Result: [OK] Found level & duration for both courses.
+        Cover image and caption displayed correctly.
+
+Step 3: Visited contact page, returned via <nav>.
+        Result: [OK] Navigation worked both ways.
+
+Step 4: Returned to FAQ, opened 2nd question with keyboard.
+        Result: [OK] Tab + Enter opened and closed the question.
+
+--- Fixes Made ---
+- Fixed video src path: media/intro.mp4 → ../media/intro.mp4
+- Removed muted="false" attribute.
+- Added preload="metadata".
+- Verified all relative paths from extracted zip copy.

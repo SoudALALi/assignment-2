@@ -1,33 +1,90 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <title>الكورسات - معهد coderz</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دليل الكورسات - معهد Coderz</title>
 </head>
 <body>
-  <nav>
-    <a href="../index.html">الرئيسية</a>
-    <a href="courses.html">الكورسات</a>
-    <a href="contact.html">تواصل معنا</a>
-  </nav>
 
-  <!-- Step 3: course name + description -->
-  <h1>كورس تطوير الويب</h1>
-  <p>سيتعلم الطالب بناء صفحات ويب كاملة باستخدام HTML وCSS، بما في ذلك الروابط والصور والتنسيق.</p>
+    <header>
+        <h1>معهد Coderz</h1>
+    </header>
 
-  <h2 id="requirements">متطلبات الكورس</h2>
-  <ul>
-    <li>حاسوب متصل بالإنترنت</li>
-    <li>محرر نصوص (مثل VS Code)</li>
-    <li>متصفح حديث</li>
-  </ul>
+    <nav>
+        <ul>
+            <li><a href="../index.html">الرئيسية</a></li>
+            <li><a href="courses.html">دليل الكورسات</a></li>
+            <li><a href="contact.html">تواصل معنا</a></li>
+        </ul>
+    </nav>
 
-  <!-- Step 4: image with figure + figcaption -->
-  <figure>
-    <img src="../images/course-cover.jpg"
-         alt="لقطة شاشة لصفحة ويب بسيطة تحتوي على عنوان وصورة وروابط"
-         width="600" height="400">
-    <figcaption>هذه هي الصفحة التي سيبنيها الطالب في أول درس من الكورس.</figcaption>
-  </figure>
+    <main>
+        <section>
+            <h2>دليل الكورسات</h2>
+
+            <!-- Course 1: Web Development -->
+            <article>
+                <h3>دورة تطوير الويب</h3>
+                <p>
+                    تعلم بناء مواقع الويب باستخدام <abbr title="HyperText Markup Language">HTML</abbr>
+                    و<abbr title="Cascading Style Sheets">CSS</abbr> و<abbr title="JavaScript">JS</abbr>.
+                    دورة شاملة تغطي أساسيات تطوير الويب الحديث.
+                </p>
+                <dl>
+                    <dt>المستوى</dt>
+                    <dd>مبتدئ</dd>
+                    <dt>المدة</dt>
+                    <dd>8 أسابيع</dd>
+                </dl>
+                <p><strong>المتطلبات:</strong> لا تحتاج إلى خبرة سابقة.</p>
+            </article>
+
+            <!-- Course 2: Python Programming -->
+            <article>
+                <h3>دورة البرمجة بلغة بايثون</h3>
+                <p>
+                    تعلم البرمجة من الصفر باستخدام لغة Python. دورة تغطي المتغيرات والدوال
+                    وهياكل البيانات والبرمجة كائنية التوجه.
+                </p>
+                <dl>
+                    <dt>المستوى</dt>
+                    <dd>مبتدئ إلى متوسط</dd>
+                    <dt>المدة</dt>
+                    <dd>10 أسابيع</dd>
+                </dl>
+                <p><strong>المتطلبات:</strong> يُفضّل معرفة أساسيات استخدام الحاسوب.</p>
+            </article>
+
+        </section>
+
+        <!-- FAQ Section -->
+        <section>
+            <h2>الأسئلة الشائعة</h2>
+
+            <details>
+                <summary>هل أحتاج إلى خبرة سابقة؟</summary>
+                <p>
+                    لا، دوراتنا مصممة للمبتدئين. ستبدأ من الأساسيات وستتقدم خطوة بخطوة
+                    حتى تصل إلى المستوى المتقدم.
+                </p>
+            </details>
+
+            <details>
+                <summary>ماذا أحضر في أول حصة؟</summary>
+                <p>
+                    أحضر حاسوبك المحمول (إن أمكن)، ودفتر ملاحظات، وقلمًا.
+                    كل المواد التعليمية ستكون متاحة رقميًا.
+                </p>
+            </details>
+                <video src="../media/intro.mp4" controls preload="metadata"></video>
+        </section>
+    </main>
+
+    <footer>
+        <p>معهد Coderz &copy; 2025</p>
+        <p>للتواصل: <a href="mailto:info@coderz-institute.com">info@coderz-institute.com</a></p>
+    </footer>
+
 </body>
 </html>
